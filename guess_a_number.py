@@ -41,9 +41,9 @@ while user_guess != random_number:
 		print("You guessed right! You win!")
 	elif user_guess < random_number:
 		print("Your guess is too low.")
-		if still_play() == 0:
+		if not still_play():
 			break
 	else:
 		print("Your guess is too high.")
-		if still_play() == 0:
+		if not still_play():
 			break
